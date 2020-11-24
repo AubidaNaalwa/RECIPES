@@ -1,0 +1,44 @@
+body{
+    
+    background-image: url('b4.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    color: aliceblue;
+    
+}
+#recipeContainer{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:2rem;
+    height: 100%;
+
+}
+.image {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-left: 25%;
+
+}
+
+.recipe {
+    height: 100%;
+    width: 100%;
+    background-color: #2cdf26;
+    
+    
+}
+ul {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    font-family: 'Roboto', sans-serif;
+    font-size: small;
+}
+
+.ingrediantContainer {
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+    margin-left: 10px;
+}
+

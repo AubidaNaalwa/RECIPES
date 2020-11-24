@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOODD - recipe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- HandleBars Section -->
+    <script id="recipeTemplate" type="text/x-handlebars-template">
+        {{#each recipes}}
+            <div class='recipe'>
+                <br>
+                <a href='{{href}}'>{{title}}</a><br><br><br>
+                <img class='image' src='{{thumbnail}}'><br>
+                <div class ="ingrediantContainer">
+                    <div>Ingrediants</div>
+                    <ul>
+                        {{#each ingredients}}
+                            <li>{{this}}</li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+        {{/each}}
+      </script>
+
+    <!-- the end of the HandleBars Section -->
+
+    <input type="text" placeholder="Insert Ingredient ...">
+    <button>Search!</button> <br><br>
+    <!-- here we are going to fill all of the recipesssssssssssss -->
+    <div id="recipeContainer"></div>
+
+
+    <script src='jquery/dist/jquery.js'></script>
+    <script src='handlebars/dist/handlebars.js'></script>
+    <script src='view.js'></script>
+    <script src='Model.js'></script>
+    <script src='Controller.js'></script>
+    <script src='main.js'></script>
+</body>
+
+</html>
